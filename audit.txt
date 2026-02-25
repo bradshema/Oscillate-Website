@@ -1,0 +1,24 @@
+﻿
+[UX AUDIT] 10 files checked
+--------------------------------------------------
+[!] ISSUES (2):
+  - [Cognitive Load] About.tsx: Form inputs without labels. Use <label> for accessibility and clarity.
+  - [Motion] Hero.tsx: GSAP animation without cleanup (kill/revert). Memory leak risk on unmount.
+[*] WARNINGS (37):
+  - [Von Restorff] globals.css: No primary CTA
+  - [Trust] page.tsx: No social proof detected. Consider adding testimonials, ratings, or 'Trusted by' logos.
+  - [Trust] page.tsx: Footer lacks authority signals. Add certifications, awards, or media mentions.
+  - [Typography] page.tsx: No line length constraint (45-75ch). Use max-w-prose or max-w-[65ch].
+  - [Typography] page.tsx: Text elements found without line-height. Body: 1.4-1.6, Headings: 1.1-1.3
+  - [Visual] page.tsx: Flat design with no depth. Consider shadows or subtle gradients for hierarchy.
+  - [Fitts' Law] About.tsx: Small targets (< 44px)
+  - [Trust] About.tsx: Form without security indicators. Add 'SSL Secure' or lock icon.
+  - [Trust] About.tsx: No social proof detected. Consider adding testimonials, ratings, or 'Trusted by' logos.
+  - [Typography] About.tsx: No line length constraint (45-75ch). Use max-w-prose or max-w-[65ch].
+  - [Typography] About.tsx: Fixed font sizes without clamp(). Consider fluid typography: clamp(MIN, PREFERRED, MAX)
+  - [Typography] About.tsx: No h1 found. Each page should have one primary heading.
+  - [Fitts' Law] Footer.tsx: Small targets (< 44px)
+  - [Serial Position] Footer.tsx: Last nav item may not be important. Place key actions at start/end.
+  - [Reflective] Footer.tsx: Long-form content without brand story/values. Add 'About' or 'Why We Exist' section.
+[+] PASSED CHECKS: 2
+STATUS: FAIL

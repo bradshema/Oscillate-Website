@@ -1,0 +1,165 @@
+﻿
+> temp-app@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.35
+
+   Creating an optimized production build ...
+node.exe : Failed to 
+compile.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (F  
+  ailed to compile.:Str   
+ ing) [], RemoteExcept    
+ion
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+
+./node_modules/@portablete
+xt/editor/lib/index.js
+Module not found: Package 
+path ./compiler-runtime 
+is not exported from 
+package C:\Users\Admin\One
+Drive\Documentos\Oscillate
+\Website\node_modules\reac
+t (see exports field in C:
+\Users\Admin\OneDrive\Docu
+mentos\Oscillate\Website\n
+ode_modules\react\package.
+json)
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+Import trace for 
+requested module:
+./node_modules/sanity/lib/
+index.js
+./sanity.config.ts
+./src/app/(studio)/studio/
+[[...index]]/page.tsx
+
+./node_modules/@portablete
+xt/editor/lib/plugins/inde
+x.js
+Module not found: Package 
+path ./compiler-runtime 
+is not exported from 
+package C:\Users\Admin\One
+Drive\Documentos\Oscillate
+\Website\node_modules\reac
+t (see exports field in C:
+\Users\Admin\OneDrive\Docu
+mentos\Oscillate\Website\n
+ode_modules\react\package.
+json)
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+Import trace for 
+requested module:
+./node_modules/sanity/lib/
+index.js
+./sanity.config.ts
+./src/app/(studio)/studio/
+[[...index]]/page.tsx
+
+./node_modules/@portablete
+xt/plugin-character-pair-d
+ecorator/dist/index.js
+Module not found: Package 
+path ./compiler-runtime 
+is not exported from 
+package C:\Users\Admin\One
+Drive\Documentos\Oscillate
+\Website\node_modules\reac
+t (see exports field in C:
+\Users\Admin\OneDrive\Docu
+mentos\Oscillate\Website\n
+ode_modules\react\package.
+json)
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+Import trace for 
+requested module:
+./node_modules/@portablete
+xt/plugin-markdown-shortcu
+ts/dist/index.js
+./node_modules/sanity/lib/
+index.js
+./sanity.config.ts
+./src/app/(studio)/studio/
+[[...index]]/page.tsx
+
+./node_modules/@portablete
+xt/plugin-input-rule/dist/
+index.js
+Module not found: Package 
+path ./compiler-runtime 
+is not exported from 
+package C:\Users\Admin\One
+Drive\Documentos\Oscillate
+\Website\node_modules\reac
+t (see exports field in C:
+\Users\Admin\OneDrive\Docu
+mentos\Oscillate\Website\n
+ode_modules\react\package.
+json)
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+Import trace for 
+requested module:
+./node_modules/@portablete
+xt/plugin-markdown-shortcu
+ts/dist/index.js
+./node_modules/sanity/lib/
+index.js
+./sanity.config.ts
+./src/app/(studio)/studio/
+[[...index]]/page.tsx
+
+./node_modules/@portablete
+xt/plugin-markdown-shortcu
+ts/dist/index.js
+Module not found: Package 
+path ./compiler-runtime 
+is not exported from 
+package C:\Users\Admin\One
+Drive\Documentos\Oscillate
+\Website\node_modules\reac
+t (see exports field in C:
+\Users\Admin\OneDrive\Docu
+mentos\Oscillate\Website\n
+ode_modules\react\package.
+json)
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+Import trace for 
+requested module:
+./node_modules/sanity/lib/
+index.js
+./sanity.config.ts
+./src/app/(studio)/studio/
+[[...index]]/page.tsx
+
+
+> Build failed because of 
+webpack errors

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #020202;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: radial-gradient(circle at 50% 30%, #2a3541 0%, #0a0b0f 70%, #020202 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Liquid Glass Utilities */
+@layer utilities {
+  .liquid-glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)];
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Subtle light refraction on the top edge */
+  .liquid-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    z-index: 10;
+  }
+
+  .liquid-glass-button {
+    @apply liquid-glass px-8 py-4 rounded-full font-semibold tracking-widest uppercase transition-all duration-300 hover:bg-white/10 hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] hover:scale-105 active:scale-95;
+    letter-spacing: 0.15em;
+  }
+  
+  .glass-panel {
+    @apply liquid-glass rounded-2xl p-8;
+  }
+}
