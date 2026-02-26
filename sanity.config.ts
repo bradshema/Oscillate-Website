@@ -5,7 +5,7 @@ import { schemaTypes } from './src/sanity/schema'
 export default defineConfig({
     name: 'default',
     title: 'Oscillate Genesis',
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'your-project-id',
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'cxacrzm4',
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
     basePath: '/studio',
     plugins: [structureTool()],

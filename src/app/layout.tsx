@@ -4,6 +4,7 @@ import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
 import NoiseOverlay from "@/components/NoiseOverlay";
 import HUDOverlay from "@/components/HUDOverlay";
+import AutoScroll from "@/components/AutoScroll";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
         <NoiseOverlay />
         <CustomCursor />
         <HUDOverlay />
+        <AutoScroll />
         {children}
       </body>
     </html>
