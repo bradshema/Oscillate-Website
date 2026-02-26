@@ -3,6 +3,7 @@
 import { useRef, useEffect } from 'react'
 import { Rocket, Globe, Award } from 'lucide-react'
 import gsap from 'gsap'
+import StaggerText from './StaggerText'
 
 export default function About() {
     const sectionRef = useRef<HTMLDivElement>(null)
@@ -68,9 +69,10 @@ export default function About() {
                     className="glass-panel h-full flex flex-col justify-center !bg-white/5 border-l-emerald-500/20 shadow-[0_12px_40px_0_rgba(0,0,0,0.6)]"
                     style={{ transformStyle: 'preserve-3d' }}
                 >
-                    <h2 className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 tracking-tight">
-                        Oscillate
-                    </h2>
+                    <StaggerText
+                        text="Oscillate"
+                        className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 tracking-tight"
+                    />
                     <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light">
                         I craft deeply immersive, high-performance digital experiences.
                         Blending cutting-edge 3D technologies with fluid motion design,

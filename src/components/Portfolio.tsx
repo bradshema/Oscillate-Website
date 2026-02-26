@@ -1,4 +1,5 @@
 import PortfolioRow, { Project } from "./PortfolioRow"
+import StaggerText from './StaggerText'
 
 export type Category = {
     _id: string
@@ -64,7 +65,10 @@ export default function Portfolio() {
         <section id="portfolio" className="relative w-full min-h-screen py-24 z-10 overflow-hidden">
             <div className="max-w-[100vw] text-left">
                 <div className="px-6 md:px-12 lg:px-24 mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">Selected Work</h2>
+                    <StaggerText
+                        text="Selected Work"
+                        className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight block"
+                    />
                     <p className="text-white/50 text-lg uppercase tracking-widest text-sm">Explore the archive</p>
                 </div>
 
