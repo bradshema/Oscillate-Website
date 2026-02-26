@@ -9,6 +9,7 @@ export type Project = {
     title: string
     overview: string
     imageUrl?: string
+    videoUrl?: string
     link?: string
 }
 
@@ -30,12 +31,16 @@ export default function PortfolioRow({
 
         const ctx = gsap.context(() => {
             // Infinite horizontal scroll animation
-            const scrollAnimation = gsap.to(rowRef.current, {
-                xPercent: direction === "left" ? -50 : 50,
-                ease: "none",
-                duration: projects.length * 8, // speed based on items
-                repeat: -1,
-            })
+            // 3 copies of the array are rendered. Moving exactly 33.3333% creates a perfect, seamless loop.
+            const scrollAnimation = gsap.fromTo(rowRef.current,
+                { xPercent: direction === "left" ? 0 : -33.333333 },
+                {
+                    xPercent: direction === "left" ? -33.333333 : 0,
+                    ease: "none",
+                    duration: projects.length * 8, // speed based on distinct items
+                    repeat: -1,
+                }
+            )
 
             // Add draggable functionality for the row
             Draggable.create(rowRef.current, {
@@ -54,19 +59,47 @@ export default function PortfolioRow({
         return () => ctx.revert()
     }, [projects, direction])
 
+    // Duplicate projects array to create the infinite loop effect seamlessly
+    const infiniteProjects = [...projects, ...projects, ...projects]
+
     return (
-        <div className="w-full overflow-visible relative flex items-center h-[400px]">
+        <div className="w-full relative flex items-center h-[400px] overflow-hidden group/row py-10">
             <div
                 ref={rowRef}
-                className="flex flex-nowrap gap-6 sm:gap-8 cursor-grab active:cursor-grabbing w-max px-6 md:px-12 lg:px-24"
-                style={direction === "right" ? { transform: "translateX(-50%)" } : {}}
+                className="flex flex-nowrap gap-6 sm:gap-8 cursor-grab w-max pl-6 sm:pl-8"
             >
-                {projects.map((project, idx) => (
+                {infiniteProjects.map((project, idx) => (
                     <div
                         key={`${project._id}-${idx}`}
-                        className="flex-none w-[280px] sm:w-[350px] md:w-[450px] h-[300px] md:h-[350px] liquid-glass rounded-2xl group overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.8)]"
+                        className="flex-none w-[280px] sm:w-[350px] md:w-[450px] h-[300px] md:h-[350px] liquid-glass rounded-2xl group overflow-hidden transition-all duration-700 hover:scale-110 hover:z-50 hover:shadow-[0_0_40px_rgba(16,185,129,0.3)] relative"
+                        onMouseEnter={(e) => {
+                            const video = e.currentTarget.querySelector('video');
+                            if (video) video.play().catch(() => { });
+                            // Pause the row scrolling when hovering over an item
+                            gsap.getTweensOf(rowRef.current).forEach(t => t.pause());
+                        }}
+                        onMouseLeave={(e) => {
+                            const video = e.currentTarget.querySelector('video');
+                            if (video) {
+                                video.pause();
+                                video.currentTime = 0;
+                            }
+                            // Resume scrolling
+                            gsap.getTweensOf(rowRef.current).forEach(t => t.play());
+                        }}
                     >
-                        {project.imageUrl ? (
+                        {project.videoUrl ? (
+                            <div className="absolute inset-0 z-0 bg-black">
+                                <video
+                                    src={project.videoUrl}
+                                    muted
+                                    loop
+                                    playsInline
+                                    className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105"
+                                    poster={project.imageUrl || ''}
+                                />
+                            </div>
+                        ) : project.imageUrl ? (
                             <div className="absolute inset-0 z-0">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img

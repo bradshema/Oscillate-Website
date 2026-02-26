@@ -15,10 +15,10 @@ const fallbackCategories: Category[] = [
         title: "High-End CGI Commercials",
         order: 1,
         projects: [
-            { _id: "p1", title: "Automotive Precision", overview: "Photorealistic 3D rendering for automotive." },
-            { _id: "p2", title: "Liquid Gold", overview: "Fluid dynamics and rigid body simulations." },
+            { _id: "p1", title: "Automotive Precision", overview: "Photorealistic 3D rendering for automotive.", videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-abstract-technology-lines-background-27329-large.mp4" },
+            { _id: "p2", title: "Liquid Gold", overview: "Fluid dynamics and rigid body simulations.", videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-ink-swirling-in-water-272-large.mp4" },
             { _id: "p3", title: "Tech Hardware", overview: "Micro-detail product visualization." },
-            { _id: "p4", title: "Luxury Story", overview: "Cinematic brand storytelling." },
+            { _id: "p4", title: "Luxury Story", overview: "Cinematic brand storytelling.", videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-abstract-plexus-background-27325-large.mp4" },
             { _id: "p5", title: "Zero Gravity", overview: "Weightless object simulations." },
             { _id: "p6", title: "Kinetic Motion", overview: "Complex 3D typography." },
         ]
