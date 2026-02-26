@@ -151,7 +151,7 @@ export default function Starfield() {
     return (
         <canvas
             ref={canvasRef}
-            className="absolute inset-0 z-0 pointer-events-none"
+            className="absolute inset-0 z-20 pointer-events-none mix-blend-screen"
             style={{ opacity: 0.9 }}
         />
     )

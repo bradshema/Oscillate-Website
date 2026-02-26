@@ -13,6 +13,7 @@ if (typeof window !== 'undefined') {
 
 export default function Hero() {
     const [isLoaded, setIsLoaded] = useState(false)
+    const [bootText, setBootText] = useState('Initializing Core...')
     const containerRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
@@ -29,6 +30,30 @@ export default function Hero() {
             }
         }
     }, [])
+
+    useEffect(() => {
+        // Developer signature for personality
+        console.log("%c✦ OSCILLATE | 3D VFX STUDIO ✦", "color: #10b981; font-size: 20px; font-weight: bold; padding: 10px; border: 1px solid #10b981; border-radius: 5px; background: #000;");
+        console.log("%cEngineered for High-End Cinematic Aesthetics.", "color: #fff; font-size: 12px; font-style: italic;");
+
+        if (isLoaded) return;
+
+        const messages = [
+            'Waking up physics engine...',
+            'Calculating spline trajectories...',
+            'Injecting 3D starfield...',
+            'Aligning orbital matrices...',
+            'Rendering volumetric glass...',
+            'Establishing connection...'
+        ]
+        let i = 0;
+        const interval = setInterval(() => {
+            setBootText(messages[i % messages.length])
+            i++;
+        }, 800)
+
+        return () => clearInterval(interval)
+    }, [isLoaded])
 
     const handleStart = () => {
         if (typeof document !== 'undefined') {
@@ -54,7 +79,7 @@ export default function Hero() {
 
             {/* Spline Container - Fade in when loaded */}
             <div
-                className={`absolute inset-0 z-10 mix-blend-screen transition-opacity duration-[2000ms] ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                className={`absolute inset-0 z-10 transition-opacity duration-[2000ms] ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
             >
                 <Spline
                     scene="https://prod.spline.design/afBlfmhvcO2kZLoC/scene.splinecode"
@@ -65,8 +90,10 @@ export default function Hero() {
             {/* Loading State fallback */}
             {!isLoaded && (
                 <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none">
-                    <div className="w-12 h-12 border border-white/5 border-t-white/40 rounded-full animate-spin mb-4"></div>
-                    <p className="text-white/30 tracking-[0.3em] font-extralight text-xs uppercase">Initializing Core</p>
+                    <div className="w-12 h-12 border border-emerald-500/20 border-t-emerald-400 rounded-full animate-spin mb-6 drop-shadow-[0_0_15px_rgba(16,185,129,0.5)]"></div>
+                    <p className="text-emerald-400/80 tracking-[0.3em] font-extralight text-xs uppercase animate-pulse">
+                        {bootText}
+                    </p>
                 </div>
             )}
 
