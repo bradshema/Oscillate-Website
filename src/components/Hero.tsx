@@ -54,12 +54,11 @@ export default function Hero() {
 
             {/* Spline Container - Fade in when loaded */}
             <div
-                className={`absolute inset-0 z-10 transition-opacity duration-[2000ms] ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                className={`absolute inset-0 z-10 mix-blend-screen transition-opacity duration-[2000ms] ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
             >
                 <Spline
                     scene="https://prod.spline.design/afBlfmhvcO2kZLoC/scene.splinecode"
                     onLoad={() => setIsLoaded(true)}
-                    className="!bg-transparent"
                 />
             </div>
 
