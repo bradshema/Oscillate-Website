@@ -70,8 +70,8 @@ export default function About() {
                     style={{ transformStyle: 'preserve-3d' }}
                 >
                     <StaggerText
-                        text="Oscillate"
-                        className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 tracking-tight"
+                        text="Ruganintwali Shema Arnaud Brad"
+                        className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 tracking-tight leading-tight"
                     />
                     <p className="text-base md:text-xl text-white/70 leading-relaxed font-light">
                         I craft deeply immersive, high-end 3D environments and custom VFX pipelines.
