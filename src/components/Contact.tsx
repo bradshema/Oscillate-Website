@@ -71,8 +71,8 @@ export default function Contact() {
                     <span className="text-gradient-emerald">Impossible.</span>
                 </h2>
 
-                <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto mb-16 leading-relaxed">
-                    Elevate your brand with award-winning 3D web experiences and meticulously engineered Next.js architectures.
+                <p className="text-sm sm:text-base md:text-xl text-white/60 max-w-2xl mx-auto mb-16 leading-relaxed px-4 md:px-0">
+                    Elevate your brand with award-winning 3D cinematic experiences and meticulously engineered VFX pipelines.
                 </p>
 
                 <button

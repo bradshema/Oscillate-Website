@@ -12,33 +12,33 @@ if (typeof window !== 'undefined') {
 const services = [
     {
         icon: Globe,
-        title: "WebGL & 3D Web",
-        desc: "Transforming standard DOM elements into immersive, performant 3D experiences utilizing Three.js and Spline."
+        title: "WebGL & 3D Environments",
+        desc: "Transforming concepts into fully immersive, real-time interactable 3D worlds utilizing Three.js and Spline."
     },
     {
         icon: PenTool,
-        title: "UX/UI Design",
-        desc: "Crafting extremely premium, fluid aesthetics focused on dark mode, liquid glass, and kinetic typography."
+        title: "VFX & Compositing",
+        desc: "Seamlessly blending CGI with live-action footage using Nuke and After Effects for cinematic realism."
     },
     {
         icon: Code2,
-        title: "Frontend Engineering",
-        desc: "Building highly interactive React architectures strictly utilizing Next.js 14 App Router and Server Components."
+        title: "Unreal Engine Physics",
+        desc: "Building highly interactive, photorealistic simulations and cinematic sequences inside UE5."
     },
     {
         icon: Database,
-        title: "Headless CMS Architecture",
-        desc: "Structuring and securing bespoke content lakes via Sanity.io for ultimate content independence."
+        title: "Digital Asset Management",
+        desc: "Structuring terabytes of 3D geometry, textures, and media pipelines for studio-level efficiency."
     },
     {
         icon: Cpu,
-        title: "Creative Animations",
-        desc: "Breathing life into the static web through advanced DOM manipulation with GSAP and custom math hooks."
+        title: "Motion Graphics",
+        desc: "Breathing life into brands through advanced kinetic typography, fluid dynamics, and 2D/3D hybrid animation."
     },
     {
         icon: Rocket,
-        title: "Performance Optimization",
-        desc: "Achieving 100/100 Lighthouse scores through edge computing, ISR caching, and pristine bundle size management."
+        title: "Render Optimization",
+        desc: "Pushing the limits of GPU limits to achieve hyper-realistic 8K renders with flawless global illumination."
     }
 ]
 
@@ -112,11 +112,11 @@ export default function Expertise() {
             <div className="absolute inset-0 bg-glow-lapis pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
-                <div className="mb-16 md:mb-24 relative z-10">
-                    <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-gradient-lapis">
-                        Technical Expertise
+                <div className="mb-12 md:mb-24 relative z-10">
+                    <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-gradient-lapis">
+                        Creative Capabilities
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-o_lapis-400 to-transparent rounded-full" />
+                    <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-o_lapis-400 to-transparent rounded-full" />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 relative z-10 perspective-1000">

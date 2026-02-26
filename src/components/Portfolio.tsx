@@ -12,28 +12,28 @@ export type Category = {
 const fallbackCategories: Category[] = [
     {
         _id: "cat-1",
-        title: "High-End Advertisements",
+        title: "High-End CGI Commercials",
         order: 1,
         projects: [
-            { _id: "p1", title: "Project Alpha", overview: "Premium 3D rendering for automotive." },
-            { _id: "p2", title: "Project Beta", overview: "Fluid dynamics in motion design." },
-            { _id: "p3", title: "Project Gamma", overview: "Tech hardware visualization." },
-            { _id: "p4", title: "Project Delta", overview: "Luxury brand storytelling." },
-            { _id: "p5", title: "Project Epsilon", overview: "Weightless interfaces." },
-            { _id: "p6", title: "Project Zeta", overview: "Kinetic typography." },
+            { _id: "p1", title: "Automotive Precision", overview: "Photorealistic 3D rendering for automotive." },
+            { _id: "p2", title: "Liquid Gold", overview: "Fluid dynamics and rigid body simulations." },
+            { _id: "p3", title: "Tech Hardware", overview: "Micro-detail product visualization." },
+            { _id: "p4", title: "Luxury Story", overview: "Cinematic brand storytelling." },
+            { _id: "p5", title: "Zero Gravity", overview: "Weightless object simulations." },
+            { _id: "p6", title: "Kinetic Motion", overview: "Complex 3D typography." },
         ]
     },
     {
         _id: "cat-2",
-        title: "Immersive Web Experiences",
+        title: "Immersive VFX & WebGL",
         order: 2,
         projects: [
-            { _id: "p11", title: "Web GL Portal", overview: "Creative coding experiment." },
-            { _id: "p12", title: "Fintech Dashboard", overview: "Dark mode data visualization." },
-            { _id: "p13", title: "E-Commerce Reimagined", overview: "3D product configurator." },
-            { _id: "p14", title: "Architectural Walkthrough", overview: "Realtime rendering." },
-            { _id: "p15", title: "Interactive Portfolio", overview: "Award winning layout." },
-            { _id: "p16", title: "Mobile App Concept", overview: "Smooth micro-interactions." },
+            { _id: "p11", title: "Unreal Portal", overview: "Real-time engine environment." },
+            { _id: "p12", title: "Sci-Fi Compositing", overview: "Nuke node-tree masterclass." },
+            { _id: "p13", title: "Houdini Storm", overview: "Complex particle FX." },
+            { _id: "p14", title: "Architectural Engine", overview: "Realtime global illumination." },
+            { _id: "p15", title: "Interactive Canvas", overview: "Award-winning WebGL layout." },
+            { _id: "p16", title: "Broadcast Package", overview: "Stylized motion television assets." },
         ]
     }
 ]

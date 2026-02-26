@@ -2,9 +2,9 @@ import { Mail, Twitter, Linkedin, Github } from 'lucide-react'
 
 export default function Footer() {
     return (
-        <footer className="relative w-full py-12 px-6 md:px-12 lg:px-24 z-20">
+        <footer className="relative w-full py-12 px-4 md:px-12 lg:px-24 z-20">
             <div className="max-w-7xl mx-auto">
-                <div className="liquid-glass rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 border-t-emerald-500/20">
+                <div className="liquid-glass rounded-3xl p-6 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 border-t-emerald-500/20">
 
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
                         <h3 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/50 tracking-tight">

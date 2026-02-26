@@ -11,21 +11,21 @@ if (typeof window !== 'undefined') {
 const experiences = [
     {
         year: "2024 - Present",
-        role: "Lead Creative Technologist",
+        role: "Lead 3D Director",
         company: "Studio Oscillate",
-        desc: "Pioneering the boundary between immersive 3D web experiences and highly performant Next.js architectures."
+        desc: "Pioneering the boundary between immersive 3D simulations, real-time Unreal Engine environments, and WebGL."
     },
     {
         year: "2022 - 2024",
-        role: "Senior Frontend Engineer",
-        company: "Awwwards Nominee Agency",
-        desc: "Led a team of 5 engineers building enterprise-scale e-commerce platforms with sub-second hydration times."
+        role: "Senior VFX Artist",
+        company: "Global Media Agency",
+        desc: "Led a team of artists building cinematic compositing pipelines and fluid simulations for international broadcast."
     },
     {
         year: "2020 - 2022",
-        role: "Interaction Designer",
-        company: "Global Tech Corp",
-        desc: "Architected component design systems and micro-interactions used by over 2 million daily active users."
+        role: "Motion Designer",
+        company: "Creative Render Co.",
+        desc: "Architected 3D motion systems and stylized broadcast packages viewed by millions globally."
     }
 ]
 
@@ -82,11 +82,11 @@ export default function Experience() {
             <div className="absolute inset-0 bg-glow-gold pointer-events-none" />
 
             <div className="max-w-5xl mx-auto px-6 md:px-12 relative z-10">
-                <div className="text-center mb-24">
-                    <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-gradient-gold">
-                        Professional Journey
+                <div className="text-center md:text-left mb-16 md:mb-24">
+                    <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-gradient-gold">
+                        Studio Journey
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-o_gold-400 to-transparent rounded-full mx-auto" />
+                    <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-o_gold-400 to-transparent rounded-full mx-auto md:mx-0" />
                 </div>
 
                 <div className="relative">

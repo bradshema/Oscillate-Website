@@ -48,14 +48,16 @@ export default function Hero() {
             ref={containerRef}
             className="relative w-full h-screen overflow-hidden flex flex-col justify-end items-center bg-transparent z-10"
         >
-            {/* Spline Container - Fade in when loaded */}
+            {/* Spline Container - Fade in when loaded - Scale on mobile */}
             <div
-                className={`absolute inset-0 z-0 transition-opacity duration-[2000ms] ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                className={`absolute inset-0 z-0 flex items-center justify-center transition-opacity duration-[2000ms] ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
             >
-                <Spline
-                    scene="https://prod.spline.design/afBlfmhvcO2kZLoC/scene.splinecode"
-                    onLoad={() => setIsLoaded(true)}
-                />
+                <div className="w-full h-full scale-[0.6] sm:scale-75 md:scale-100 flex items-center justify-center transform origin-center">
+                    <Spline
+                        scene="https://prod.spline.design/afBlfmhvcO2kZLoC/scene.splinecode"
+                        onLoad={() => setIsLoaded(true)}
+                    />
+                </div>
             </div>
 
             {/* Loading State fallback */}
@@ -72,7 +74,7 @@ export default function Hero() {
             {/* START Button - Fade in with scene */}
             <button
                 onClick={handleStart}
-                className={`liquid-glass-button z-20 mb-20 relative transition-all duration-[1500ms] delay-[1000ms] ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+                className={`liquid-glass-button z-20 mb-[15vh] md:mb-20 relative transition-all duration-[1500ms] delay-[1000ms] text-sm md:text-base px-6 py-3 md:px-8 md:py-4 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
             >
                 START
             </button>

@@ -73,10 +73,10 @@ export default function About() {
                         text="Oscillate"
                         className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 tracking-tight"
                     />
-                    <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light">
-                        I craft deeply immersive, high-performance digital experiences.
-                        Blending cutting-edge 3D technologies with fluid motion design,
-                        I build environments that transcend the traditional web canvas—focusing on weightless interfaces, liquid glass aesthetics, and premium interactions.
+                    <p className="text-base md:text-xl text-white/70 leading-relaxed font-light">
+                        I craft deeply immersive, high-end 3D environments and custom VFX pipelines.
+                        Blending industry-standard rendering technologies with cinematic motion design,
+                        I build media that transcends the screen—focusing on weightless animation, liquid glass aesthetics, and premium visual experiences.
                     </p>
                 </div>
 
@@ -88,9 +88,9 @@ export default function About() {
                         className="liquid-glass rounded-2xl p-8 flex flex-col items-center justify-center text-center sm:col-span-2 group hover:bg-white/10 transition-colors duration-500"
                         style={{ transformStyle: 'preserve-3d' }}
                     >
-                        <Rocket className="w-12 h-12 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
-                        <h3 className="text-2xl font-semibold text-white/90">20+ Projects</h3>
-                        <p className="text-sm text-white/50 mt-2 tracking-wider uppercase">Delivered worldwide</p>
+                        <Rocket className="w-10 h-10 md:w-12 md:h-12 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
+                        <h3 className="text-xl md:text-2xl font-semibold text-white/90">Premium Renderings</h3>
+                        <p className="text-xs md:text-sm text-white/50 mt-2 tracking-wider uppercase">8k & 12k Resolution</p>
                     </div>
 
                     {/* Square 2 */}
@@ -99,9 +99,9 @@ export default function About() {
                         className="liquid-glass rounded-2xl p-8 flex flex-col items-center justify-center text-center group hover:bg-white/10 transition-colors duration-500"
                         style={{ transformStyle: 'preserve-3d' }}
                     >
-                        <Globe className="w-10 h-10 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
-                        <h3 className="text-xl font-semibold text-white/90">Global Clients</h3>
-                        <p className="text-xs text-white/50 mt-2 tracking-wider uppercase">Across 4 continents</p>
+                        <Globe className="w-8 h-8 md:w-10 md:h-10 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
+                        <h3 className="text-lg md:text-xl font-semibold text-white/90">Cinematic VFX</h3>
+                        <p className="text-[10px] md:text-xs text-white/50 mt-2 tracking-wider uppercase">Industry Standard</p>
                     </div>
 
                     {/* Square 3 */}
@@ -110,9 +110,9 @@ export default function About() {
                         className="liquid-glass rounded-2xl p-8 flex flex-col items-center justify-center text-center group hover:bg-white/10 transition-colors duration-500"
                         style={{ transformStyle: 'preserve-3d' }}
                     >
-                        <Award className="w-10 h-10 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
-                        <h3 className="text-xl font-semibold text-white/90">Premium Quality</h3>
-                        <p className="text-xs text-white/50 mt-2 tracking-wider uppercase">Award winning</p>
+                        <Award className="w-8 h-8 md:w-10 md:h-10 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
+                        <h3 className="text-lg md:text-xl font-semibold text-white/90">Motion Media</h3>
+                        <p className="text-[10px] md:text-xs text-white/50 mt-2 tracking-wider uppercase">Award winning designs</p>
                     </div>
                 </div>
 
