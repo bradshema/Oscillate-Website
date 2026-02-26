@@ -17,15 +17,19 @@ export default function Starfield() {
         canvas.height = height
 
         const stars: { x: number, y: number, z: number, size: number, glow: number }[] = []
-        const numStars = 400
+        const numStars = 1500
 
-        // Distribute stars in a 3D sphere/cube
+        // Distribute stars in a large 3D sphere so rotation doesn't change density
         for (let i = 0; i < numStars; i++) {
+            const r = 400 + Math.random() * 5000;
+            const theta = 2 * Math.PI * Math.random();
+            const phi = Math.acos(2 * Math.random() - 1);
+
             stars.push({
-                x: (Math.random() - 0.5) * 3000,
-                y: (Math.random() - 0.5) * 3000,
-                z: (Math.random() - 0.5) * 3000,
-                size: Math.random() * 1.5 + 0.5,
+                x: r * Math.sin(phi) * Math.cos(theta),
+                y: r * Math.sin(phi) * Math.sin(theta),
+                z: r * Math.cos(phi),
+                size: Math.random() * 1.2 + 0.5,
                 glow: Math.random() * 0.5 + 0.3
             })
         }
@@ -100,22 +104,24 @@ export default function Starfield() {
                 const z2 = -star.x * Math.sin(totalRy) + z1 * Math.cos(totalRy)
 
                 // Project to 2D
-                const fov = 800
-                const z = z2 + 1500
+                const fov = 1000
+                const z = z2 + 2000
 
                 if (z > 0) {
                     const scale = fov / z
                     const px = cx + x2 * scale
                     const py = cy + y1 * scale
 
-                    // Only draw if within bounds
-                    if (px >= 0 && px <= width && py >= 0 && py <= height) {
-                        const alpha = Math.min(1, Math.max(0, 1 - (z / 3000)))
+                    // Only draw if within bounds (with slight margin)
+                    if (px >= -50 && px <= width + 50 && py >= -50 && py <= height + 50) {
+                        const alphaDistance = Math.min(1, Math.max(0, 1 - (z / 6000)))
+                        const twinkle = 0.5 + 0.5 * Math.sin(Date.now() * 0.001 + star.glow * 100)
+                        const finalAlpha = alphaDistance * star.glow * (0.5 + 0.5 * twinkle)
 
                         // Core star
                         ctx.beginPath()
                         ctx.arc(px, py, star.size * scale, 0, Math.PI * 2)
-                        ctx.fillStyle = `rgba(255, 255, 255, ${alpha * star.glow})`
+                        ctx.fillStyle = `rgba(255, 255, 255, ${finalAlpha})`
                         ctx.fill()
 
                         // Add glow
