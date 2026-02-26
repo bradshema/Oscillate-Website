@@ -92,12 +92,12 @@ export default function Starfield() {
 
             stars.forEach(star => {
                 // Rotate around X axis
-                let y1 = star.y * Math.cos(totalRx) - star.z * Math.sin(totalRx)
-                let z1 = star.y * Math.sin(totalRx) + star.z * Math.cos(totalRx)
+                const y1 = star.y * Math.cos(totalRx) - star.z * Math.sin(totalRx)
+                const z1 = star.y * Math.sin(totalRx) + star.z * Math.cos(totalRx)
 
                 // Rotate around Y axis
-                let x2 = star.x * Math.cos(totalRy) + z1 * Math.sin(totalRy)
-                let z2 = -star.x * Math.sin(totalRy) + z1 * Math.cos(totalRy)
+                const x2 = star.x * Math.cos(totalRy) + z1 * Math.sin(totalRy)
+                const z2 = -star.x * Math.sin(totalRy) + z1 * Math.cos(totalRy)
 
                 // Project to 2D
                 const fov = 800
