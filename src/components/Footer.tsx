@@ -7,10 +7,10 @@ export default function Footer() {
                 <div className="liquid-glass rounded-3xl p-6 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 border-t-emerald-500/20">
 
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                        <h3 className="text-2xl md:text-4xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/50 tracking-tight">
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-light tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-white/50">
                             Ruganintwali Shema Arnaud Brad
                         </h3>
-                        <p className="text-emerald-400 mt-2 text-sm md:text-base tracking-widest uppercase font-semibold">
+                        <p className="text-emerald-400 mt-3 text-xs md:text-sm tracking-[0.3em] uppercase font-extralight">
                             Available for new projects
                         </p>
                     </div>
@@ -32,7 +32,7 @@ export default function Footer() {
 
                 </div>
 
-                <div className="mt-8 flex flex-col md:flex-row items-center justify-between text-white/30 text-xs tracking-widest uppercase text-center md:text-left">
+                <div className="mt-8 flex flex-col md:flex-row items-center justify-between text-white/30 text-[10px] md:text-xs tracking-[0.2em] font-extralight uppercase text-center md:text-left">
                     <p>© {new Date().getFullYear()} Ruganintwali Shema Arnaud Brad. All rights reserved.</p>
                     <div className="flex gap-6 mt-4 md:mt-0 justify-center text-center">
                         <a href="#" className="hover:text-emerald-400 transition-colors">Privacy</a>

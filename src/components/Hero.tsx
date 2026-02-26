@@ -61,8 +61,8 @@ export default function Hero() {
             {/* Loading State fallback */}
             {!isLoaded && (
                 <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none">
-                    <div className="w-12 h-12 border border-white/10 border-t-white/60 rounded-full animate-spin mb-4"></div>
-                    <p className="text-white/40 tracking-[0.2em] text-sm uppercase">Initializing Core</p>
+                    <div className="w-12 h-12 border border-white/5 border-t-white/40 rounded-full animate-spin mb-4"></div>
+                    <p className="text-white/30 tracking-[0.3em] font-extralight text-xs uppercase">Initializing Core</p>
                 </div>
             )}
 

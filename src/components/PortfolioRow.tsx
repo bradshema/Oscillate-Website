@@ -82,8 +82,8 @@ export default function PortfolioRow({
                         <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/90 via-[#020202]/40 to-transparent z-10" />
 
                         <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 transform-gpu">
-                            <h4 className="text-xl md:text-2xl font-bold text-white mb-2 tracking-tight">{project.title}</h4>
-                            <p className="text-sm md:text-base text-white/60 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            <h4 className="text-xl md:text-2xl font-medium text-white mb-2 tracking-wide">{project.title}</h4>
+                            <p className="text-sm md:text-base text-white/50 font-extralight tracking-wide line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                                 {project.overview}
                             </p>
 
@@ -92,7 +92,7 @@ export default function PortfolioRow({
                                     href={project.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-block mt-4 text-xs font-semibold tracking-widest uppercase text-emerald-400 border border-emerald-500/30 rounded-full px-4 py-2 hover:bg-emerald-500/10 transition-colors opacity-0 group-hover:opacity-100 delay-200"
+                                    className="inline-block mt-4 text-[10px] md:text-xs font-medium tracking-[0.2em] uppercase text-emerald-400 border border-emerald-500/20 rounded-full px-4 py-2 hover:bg-emerald-500/10 transition-colors opacity-0 group-hover:opacity-100 delay-200"
                                 >
                                     View Case
                                 </a>

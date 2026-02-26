@@ -71,9 +71,9 @@ export default function About() {
                 >
                     <StaggerText
                         text="Ruganintwali Shema Arnaud Brad"
-                        className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 tracking-tight leading-tight"
+                        className="text-4xl sm:text-5xl lg:text-7xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 tracking-wider leading-tight"
                     />
-                    <p className="text-base md:text-xl text-white/70 leading-relaxed font-light">
+                    <p className="text-base md:text-xl text-white/70 leading-relaxed font-extralight tracking-wide">
                         I craft deeply immersive, high-end 3D environments and custom VFX pipelines.
                         Blending industry-standard rendering technologies with cinematic motion design,
                         I build media that transcends the screen—focusing on weightless animation, liquid glass aesthetics, and premium visual experiences.
@@ -89,8 +89,8 @@ export default function About() {
                         style={{ transformStyle: 'preserve-3d' }}
                     >
                         <Rocket className="w-10 h-10 md:w-12 md:h-12 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
-                        <h3 className="text-xl md:text-2xl font-semibold text-white/90">Premium Renderings</h3>
-                        <p className="text-xs md:text-sm text-white/50 mt-2 tracking-wider uppercase">8k & 12k Resolution</p>
+                        <h3 className="text-xl md:text-2xl font-medium tracking-wide text-white/90">Premium Renderings</h3>
+                        <p className="text-xs md:text-sm text-white/50 mt-2 tracking-[0.2em] font-light uppercase">8k & 12k Resolution</p>
                     </div>
 
                     {/* Square 2 */}
@@ -100,8 +100,8 @@ export default function About() {
                         style={{ transformStyle: 'preserve-3d' }}
                     >
                         <Globe className="w-8 h-8 md:w-10 md:h-10 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
-                        <h3 className="text-lg md:text-xl font-semibold text-white/90">Cinematic VFX</h3>
-                        <p className="text-[10px] md:text-xs text-white/50 mt-2 tracking-wider uppercase">Industry Standard</p>
+                        <h3 className="text-lg md:text-xl font-medium tracking-wide text-white/90">Cinematic VFX</h3>
+                        <p className="text-[10px] md:text-xs text-white/50 mt-2 tracking-[0.2em] font-light uppercase">Industry Standard</p>
                     </div>
 
                     {/* Square 3 */}
@@ -111,8 +111,8 @@ export default function About() {
                         style={{ transformStyle: 'preserve-3d' }}
                     >
                         <Award className="w-8 h-8 md:w-10 md:h-10 text-emerald-400/80 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.3)] group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500" />
-                        <h3 className="text-lg md:text-xl font-semibold text-white/90">Motion Media</h3>
-                        <p className="text-[10px] md:text-xs text-white/50 mt-2 tracking-wider uppercase">Award winning designs</p>
+                        <h3 className="text-lg md:text-xl font-medium tracking-wide text-white/90">Motion Media</h3>
+                        <p className="text-[10px] md:text-xs text-white/50 mt-2 tracking-[0.2em] font-light uppercase">Award winning designs</p>
                     </div>
                 </div>
 

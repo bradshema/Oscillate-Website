@@ -67,15 +67,15 @@ export default function Portfolio() {
                 <div className="px-6 md:px-12 lg:px-24 mb-16">
                     <StaggerText
                         text="Selected Work"
-                        className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight block"
+                        className="text-4xl md:text-5xl font-light text-white mb-2 tracking-wide block"
                     />
-                    <p className="text-white/50 text-lg uppercase tracking-widest text-sm">Explore the archive</p>
+                    <p className="text-white/40 text-sm font-extralight uppercase tracking-[0.3em]">Explore the archive</p>
                 </div>
 
                 <div className="flex flex-col gap-12 sm:gap-16">
                     {activeCategories.map((category, idx) => (
                         <div key={category._id} className="w-full">
-                            <h3 className="px-6 md:px-12 lg:px-24 text-2xl font-semibold text-white/90 mb-6 drop-shadow-md">
+                            <h3 className="px-6 md:px-12 lg:px-24 text-xl md:text-2xl font-medium tracking-wide text-white/80 mb-6 drop-shadow-md">
                                 {category.title}
                             </h3>
                             <PortfolioRow

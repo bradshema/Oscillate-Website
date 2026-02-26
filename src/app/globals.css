@@ -9,7 +9,7 @@
 
 body {
   color: var(--foreground);
-  background: radial-gradient(circle at 50% 30%, #2a3541 0%, #0a0b0f 70%, #020202 100%);
+  background: radial-gradient(circle at 50% 30%, #151a21 0%, #050608 60%, #000000 100%);
   background-attachment: fixed;
   min-height: 100vh;
   margin: 0;
@@ -18,11 +18,11 @@ body {
 
 /* Liquid Glass Utilities */
 .liquid-glass {
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
   position: relative;
   overflow: hidden;
 }
@@ -35,30 +35,30 @@ body {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   z-index: 10;
 }
 
 .liquid-glass-button {
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
   position: relative;
   overflow: hidden;
   padding: 1rem 2rem;
   border-radius: 9999px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+  font-weight: 400;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   transition: all 300ms;
 }
 
 .liquid-glass-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.05);
+  transform: scale(1.02);
 }
 
 .liquid-glass-button:active {
@@ -66,11 +66,11 @@ body {
 }
 
 .glass-panel {
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
@@ -106,13 +106,13 @@ body {
 
 /* Background Glows (For absolute positioned elements under the glass) */
 .bg-glow-emerald {
-  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
 }
 
 .bg-glow-gold {
-  background: radial-gradient(circle at center, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(245, 158, 11, 0.06) 0%, transparent 70%);
 }
 
 .bg-glow-lapis {
-  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
 }

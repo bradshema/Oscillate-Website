@@ -64,20 +64,20 @@ export default function Contact() {
             <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-o_emerald-800/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none animate-pulse" style={{ animationDuration: '12s', animationDelay: '2s' }} />
 
             <div className="max-w-4xl mx-auto px-6 text-center relative z-10 flex flex-col items-center">
-                <p className="text-o_emerald-400 font-bold tracking-[0.2em] uppercase text-sm mb-6">Start a Project</p>
+                <p className="text-o_emerald-400 font-extralight tracking-[0.3em] uppercase text-xs md:text-sm mb-6">Start a Project</p>
 
-                <h2 className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 text-white leading-tight">
+                <h2 className="text-5xl md:text-8xl font-light tracking-wide mb-8 text-white leading-tight">
                     Let&apos;s Build The <br />
                     <span className="text-gradient-emerald">Impossible.</span>
                 </h2>
 
-                <p className="text-sm sm:text-base md:text-xl text-white/60 max-w-2xl mx-auto mb-16 leading-relaxed px-4 md:px-0">
+                <p className="text-sm sm:text-base md:text-xl text-white/50 max-w-2xl mx-auto mb-16 leading-relaxed px-4 md:px-0 font-extralight tracking-wide">
                     Elevate your brand with award-winning 3D cinematic experiences and meticulously engineered VFX pipelines.
                 </p>
 
                 <button
                     ref={buttonRef}
-                    className="relative group overflow-hidden rounded-full bg-o_emerald-500 text-obsidian-900 font-bold tracking-widest uppercase px-12 py-6 text-lg transition-transform hover:shadow-[0_0_40px_rgba(16,185,129,0.4)]"
+                    className="relative group overflow-hidden rounded-full bg-o_emerald-500 text-obsidian-900 font-medium tracking-[0.2em] uppercase px-12 py-6 text-sm md:text-base transition-transform hover:shadow-[0_0_40px_rgba(16,185,129,0.3)]"
                 >
                     <span className="relative z-10">Initiate Contact</span>
 

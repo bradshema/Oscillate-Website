@@ -113,7 +113,7 @@ export default function Expertise() {
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
                 <div className="mb-12 md:mb-24 relative z-10">
-                    <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-gradient-lapis">
+                    <h2 className="text-4xl sm:text-5xl md:text-7xl font-light tracking-wide mb-4 text-gradient-lapis">
                         Creative Capabilities
                     </h2>
                     <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-o_lapis-400 to-transparent rounded-full" />
@@ -133,15 +133,15 @@ export default function Expertise() {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-br from-o_lapis-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-                                <div className="w-14 h-14 rounded-full bg-o_lapis-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 border border-o_lapis-500/20" style={{ transform: "translateZ(30px)" }}>
+                                <div className="w-14 h-14 rounded-full bg-o_lapis-500/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 border border-o_lapis-500/10" style={{ transform: "translateZ(30px)" }}>
                                     <Icon className="w-6 h-6 text-o_lapis-400" />
                                 </div>
 
-                                <h3 className="text-xl font-bold mb-3 text-white group-hover:text-o_lapis-200 transition-colors duration-300" style={{ transform: "translateZ(20px)" }}>
+                                <h3 className="text-xl font-medium tracking-wide mb-3 text-white group-hover:text-o_lapis-200 transition-colors duration-300" style={{ transform: "translateZ(20px)" }}>
                                     {service.title}
                                 </h3>
 
-                                <p className="text-white/50 text-sm leading-relaxed" style={{ transform: "translateZ(10px)" }}>
+                                <p className="text-white/50 text-sm font-extralight leading-relaxed tracking-wide" style={{ transform: "translateZ(10px)" }}>
                                     {service.desc}
                                 </p>
                             </div>

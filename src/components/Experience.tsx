@@ -83,7 +83,7 @@ export default function Experience() {
 
             <div className="max-w-5xl mx-auto px-6 md:px-12 relative z-10">
                 <div className="text-center md:text-left mb-16 md:mb-24">
-                    <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-gradient-gold">
+                    <h2 className="text-4xl sm:text-5xl md:text-7xl font-light tracking-wide mb-4 text-gradient-gold">
                         Studio Journey
                     </h2>
                     <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-o_gold-400 to-transparent rounded-full mx-auto md:mx-0" />
@@ -120,17 +120,17 @@ export default function Experience() {
                                             {/* Hover Glow */}
                                             <div className="absolute inset-0 bg-gradient-to-br from-o_gold-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-                                            <span className="inline-block px-4 py-1 rounded-full bg-o_gold-500/10 text-o_gold-400 text-xs font-bold tracking-widest uppercase mb-4">
+                                            <span className="inline-block px-4 py-1 rounded-full bg-o_gold-500/5 border border-o_gold-500/10 text-o_gold-400 text-xs font-light tracking-[0.2em] uppercase mb-4">
                                                 {exp.year}
                                             </span>
 
-                                            <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-o_gold-200 transition-colors duration-300">
+                                            <h3 className="text-2xl font-medium tracking-wide text-white mb-2 group-hover:text-o_gold-200 transition-colors duration-300">
                                                 {exp.role}
                                             </h3>
 
-                                            <h4 className="text-lg text-white/70 mb-4">{exp.company}</h4>
+                                            <h4 className="text-sm font-extralight tracking-widest uppercase text-white/50 mb-4">{exp.company}</h4>
 
-                                            <p className="text-white/50 text-sm leading-relaxed">
+                                            <p className="text-white/60 text-sm font-extralight leading-relaxed tracking-wide">
                                                 {exp.desc}
                                             </p>
                                         </div>
