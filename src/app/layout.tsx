@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
 import NoiseOverlay from "@/components/NoiseOverlay";
+import HUDOverlay from "@/components/HUDOverlay";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-background text-foreground antialiased`}>
         <NoiseOverlay />
         <CustomCursor />
+        <HUDOverlay />
         {children}
       </body>
     </html>
