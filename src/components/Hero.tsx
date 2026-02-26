@@ -59,6 +59,7 @@ export default function Hero() {
                 <Spline
                     scene="https://prod.spline.design/afBlfmhvcO2kZLoC/scene.splinecode"
                     onLoad={() => setIsLoaded(true)}
+                    className="!bg-transparent"
                 />
             </div>
 
