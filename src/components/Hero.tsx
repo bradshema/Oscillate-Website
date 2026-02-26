@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import Spline from '@splinetool/react-spline'
 import gsap from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+import Starfield from './Starfield'
 
 // Register plugins inside component or file scope
 if (typeof window !== 'undefined') {
@@ -48,9 +49,12 @@ export default function Hero() {
             ref={containerRef}
             className="relative w-full h-screen overflow-hidden flex flex-col justify-end items-center bg-transparent z-10"
         >
+            {/* Starfield Background Layer */}
+            <Starfield />
+
             {/* Spline Container - Fade in when loaded */}
             <div
-                className={`absolute inset-0 z-0 transition-opacity duration-[2000ms] ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                className={`absolute inset-0 z-10 transition-opacity duration-[2000ms] ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
             >
                 <Spline
                     scene="https://prod.spline.design/afBlfmhvcO2kZLoC/scene.splinecode"
@@ -60,7 +64,7 @@ export default function Hero() {
 
             {/* Loading State fallback */}
             {!isLoaded && (
-                <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none">
+                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none">
                     <div className="w-12 h-12 border border-white/5 border-t-white/40 rounded-full animate-spin mb-4"></div>
                     <p className="text-white/30 tracking-[0.3em] font-extralight text-xs uppercase">Initializing Core</p>
                 </div>
@@ -72,7 +76,7 @@ export default function Hero() {
             {/* START Button - Fade in with scene */}
             <button
                 onClick={handleStart}
-                className={`liquid-glass-button z-20 mb-[15vh] md:mb-20 relative transition-all duration-[1500ms] delay-[1000ms] text-sm md:text-base px-6 py-3 md:px-8 md:py-4 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+                className={`liquid-glass-button z-30 mb-[15vh] md:mb-20 relative transition-all duration-[1500ms] delay-[1000ms] text-sm md:text-base px-6 py-3 md:px-8 md:py-4 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
             >
                 START
             </button>
